@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Bundle Builder</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <h1 class="main-heading">Buy 3 and Save 30%</h1>
+    <main class="bundle-builder">
+      <section class="products-grid" id="productGrid">
+        <!-- Product cards will be injected by JavaScript -->
+      </section>
+
+      <aside class="bundle-sidebar">
+        <h2 class="sidebar-heading">Create a Bundle</h2>
+        <p>
+          Add at <strong>least 3</strong> products and
+          <strong>Save 30%</strong>.
+        </p>
+        <div class="progress-bar">
+          <div id="progressFill" class="progress-fill"></div>
+          <span id="progressText">0/3 added</span>
+        </div>
+
+        <ul id="selectedList" class="selected-products">
+          <!-- Selected items will be shown here -->
+        </ul>
+
+        <div class="pricing">
+          <p>Discount: <span id="discount">$0.00</span></p>
+          <p>Subtotal: <strong id="subtotal">$0.00</strong></p>
+        </div>
+
+        <button id="ctaButton" disabled class="cta-button">
+          Add Bundle to Cart
+        </button>
+      </aside>
+    </main>
+
+    <script src="script.js"></script>
+  </body>
+</html>
