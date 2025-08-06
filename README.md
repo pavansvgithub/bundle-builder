@@ -67,12 +67,4 @@ This is a simple **Product Bundle Builder UI** built with HTML, CSS, and JavaScr
 
 ---
 
-## 📸 UI Highlights
 
-- **Pricing Row Styling** (like Discount/Subtotal) is achieved using CSS Flexbox:
-  ```css
-  .pricing p {
-    display: flex;
-    justify-content: space-between;
-    margin: 8px 0;
-  }
